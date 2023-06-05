@@ -14,7 +14,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let homeVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController")
+        homeVC.tabBarItem.title = "Home"
+        
+        let searchVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SearchViewController")
+        searchVC.tabBarItem.title = "Search"
+        
+        let profileVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfileViewController")
+        profileVC.tabBarItem.title = "Profile"
+        
+        let tabbarController = UITabBarController()
+        tabbarController.viewControllers = [homeVC, searchVC, profileVC]
+        self.window?.rootViewController = tabbarController
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
