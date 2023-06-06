@@ -151,62 +151,33 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jtK-qk-jXz">
                                 <rect key="frame" x="760" y="100" width="400" height="90"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="400" id="a41-Z5-IO6"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="a41-Z5-IO6"/>
                                     <constraint firstAttribute="height" constant="90" id="bvu-ge-Soq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="5fN-na-Hho">
-                                <rect key="frame" x="546.5" y="280" width="827" height="86"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kY5-Jd-emT">
-                                        <rect key="frame" x="0.0" y="0.0" width="106" height="86"/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="A"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyE-MO-GaR">
-                                        <rect key="frame" x="146" y="0.0" width="104" height="86"/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="B"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Rs-fd-8JL">
-                                        <rect key="frame" x="290" y="0.0" width="107" height="86"/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="C"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfV-mT-CAI">
-                                        <rect key="frame" x="437" y="0.0" width="107" height="86"/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="D"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMg-mr-ljt">
-                                        <rect key="frame" x="584" y="0.0" width="102" height="86"/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="E"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jJ-KC-ZcV">
-                                        <rect key="frame" x="726" y="0.0" width="101" height="86"/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="F"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="7LG-t6-xRo">
+                                <rect key="frame" x="0.0" y="259" width="1920" height="821"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Crf-1q-zvz" id="s5e-Vb-Icb"/>
+                                    <outlet property="delegate" destination="Crf-1q-zvz" id="IAy-Dv-HsB"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4bE-xL-YSw"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7LG-t6-xRo" secondAttribute="bottom" id="LqK-9z-ZGS"/>
+                            <constraint firstItem="7LG-t6-xRo" firstAttribute="top" secondItem="jtK-qk-jXz" secondAttribute="bottom" constant="69" id="R53-78-RSI"/>
                             <constraint firstItem="jtK-qk-jXz" firstAttribute="top" secondItem="4bE-xL-YSw" secondAttribute="top" constant="40" id="Si7-OI-yzO"/>
-                            <constraint firstItem="5fN-na-Hho" firstAttribute="top" secondItem="jtK-qk-jXz" secondAttribute="bottom" constant="90" id="c7T-ja-f4N"/>
-                            <constraint firstItem="5fN-na-Hho" firstAttribute="centerX" secondItem="Kh1-ie-PAJ" secondAttribute="centerX" id="u6A-Hf-Rsu"/>
+                            <constraint firstAttribute="trailing" secondItem="7LG-t6-xRo" secondAttribute="trailing" id="sql-aL-wdz"/>
                             <constraint firstItem="jtK-qk-jXz" firstAttribute="centerX" secondItem="Kh1-ie-PAJ" secondAttribute="centerX" id="wGh-TV-UK6"/>
+                            <constraint firstItem="7LG-t6-xRo" firstAttribute="leading" secondItem="Kh1-ie-PAJ" secondAttribute="leading" id="yfh-qd-gNe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="detailTableView" destination="7LG-t6-xRo" id="51q-fh-By9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gx3-zh-eoE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -281,7 +252,7 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEn-pi-vA4">
                                                             <rect key="frame" x="50" y="145" width="821" height="364"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <mutableString key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</mutableString>
+                                                            <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>

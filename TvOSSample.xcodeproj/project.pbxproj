@@ -26,6 +26,15 @@
 		683932712A2A953A0062C2F8 /* ClassifiedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6839326F2A2A953A0062C2F8 /* ClassifiedCollectionViewCell.xib */; };
 		683932742A2A95460062C2F8 /* ToolsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683932722A2A95460062C2F8 /* ToolsCollectionViewCell.swift */; };
 		683932752A2A95460062C2F8 /* ToolsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 683932732A2A95460062C2F8 /* ToolsCollectionViewCell.xib */; };
+		6850364F2A2FA6BB00747A7A /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6850364D2A2FA6BB00747A7A /* SearchTableViewCell.swift */; };
+		685036502A2FA6BB00747A7A /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6850364E2A2FA6BB00747A7A /* SearchTableViewCell.xib */; };
+		685036522A2FAFE800747A7A /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685036512A2FAFE800747A7A /* SearchViewModel.swift */; };
+		685036562A2FB05700747A7A /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685036552A2FB05700747A7A /* ApiService.swift */; };
+		685036592A2FB38700747A7A /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685036582A2FB38700747A7A /* SearchModel.swift */; };
+		6850365C2A2FC07B00747A7A /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6850365B2A2FC07B00747A7A /* SDWebImage */; };
+		6850365F2A2FC10F00747A7A /* UIImageView+TvOSUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6850365E2A2FC10F00747A7A /* UIImageView+TvOSUIImageView.swift */; };
+		685036622A2FC91F00747A7A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685036612A2FC91F00747A7A /* Utils.swift */; };
+		685036652A2FCA7B00747A7A /* URLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685036642A2FCA7B00747A7A /* URLManager.swift */; };
 		68665AE22A2E877100A71563 /* Debugging.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 68665AE12A2E877100A71563 /* Debugging.mp4 */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +78,14 @@
 		6839326F2A2A953A0062C2F8 /* ClassifiedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassifiedCollectionViewCell.xib; sourceTree = "<group>"; };
 		683932722A2A95460062C2F8 /* ToolsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsCollectionViewCell.swift; sourceTree = "<group>"; };
 		683932732A2A95460062C2F8 /* ToolsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolsCollectionViewCell.xib; sourceTree = "<group>"; };
+		6850364D2A2FA6BB00747A7A /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		6850364E2A2FA6BB00747A7A /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		685036512A2FAFE800747A7A /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		685036552A2FB05700747A7A /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		685036582A2FB38700747A7A /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		6850365E2A2FC10F00747A7A /* UIImageView+TvOSUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+TvOSUIImageView.swift"; sourceTree = "<group>"; };
+		685036612A2FC91F00747A7A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		685036642A2FCA7B00747A7A /* URLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLManager.swift; sourceTree = "<group>"; };
 		68665AE12A2E877100A71563 /* Debugging.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Debugging.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6850365C2A2FC07B00747A7A /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,11 +138,12 @@
 		6839322A2A2A7B140062C2F8 /* TvOSSample */ = {
 			isa = PBXGroup;
 			children = (
-				683932582A2A8D810062C2F8 /* Sections */,
 				6839322B2A2A7B140062C2F8 /* AppDelegate.swift */,
 				6839322F2A2A7B140062C2F8 /* Main.storyboard */,
-				683932322A2A7B150062C2F8 /* Assets.xcassets */,
 				683932342A2A7B150062C2F8 /* LaunchScreen.storyboard */,
+				683932582A2A8D810062C2F8 /* Sections */,
+				685036532A2FB03600747A7A /* Common */,
+				683932322A2A7B150062C2F8 /* Assets.xcassets */,
 			);
 			path = TvOSSample;
 			sourceTree = "<group>";
@@ -178,6 +197,9 @@
 			isa = PBXGroup;
 			children = (
 				6839325F2A2A8DD70062C2F8 /* SearchViewController.swift */,
+				685036512A2FAFE800747A7A /* SearchViewModel.swift */,
+				6850364C2A2FA69600747A7A /* Views */,
+				685036572A2FB37200747A7A /* Model */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -206,6 +228,66 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		6850364C2A2FA69600747A7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6850364D2A2FA6BB00747A7A /* SearchTableViewCell.swift */,
+				6850364E2A2FA6BB00747A7A /* SearchTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		685036532A2FB03600747A7A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				685036632A2FCA6A00747A7A /* URLManager */,
+				685036602A2FC91300747A7A /* Utils */,
+				6850365D2A2FC0BD00747A7A /* Extension */,
+				685036542A2FB05700747A7A /* WebService */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		685036542A2FB05700747A7A /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				685036552A2FB05700747A7A /* ApiService.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		685036572A2FB37200747A7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				685036582A2FB38700747A7A /* SearchModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6850365D2A2FC0BD00747A7A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6850365E2A2FC10F00747A7A /* UIImageView+TvOSUIImageView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		685036602A2FC91300747A7A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				685036612A2FC91F00747A7A /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		685036632A2FCA6A00747A7A /* URLManager */ = {
+			isa = PBXGroup;
+			children = (
+				685036642A2FCA7B00747A7A /* URLManager.swift */,
+			);
+			path = URLManager;
+			sourceTree = "<group>";
+		};
 		68665AE02A2E868200A71563 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +312,9 @@
 			dependencies = (
 			);
 			name = TvOSSample;
+			packageProductDependencies = (
+				6850365B2A2FC07B00747A7A /* SDWebImage */,
+			);
 			productName = TvOSSample;
 			productReference = 683932282A2A7B140062C2F8 /* TvOSSample.app */;
 			productType = "com.apple.product-type.application";
@@ -302,6 +387,9 @@
 				Base,
 			);
 			mainGroup = 6839321F2A2A7B140062C2F8;
+			packageReferences = (
+				6850365A2A2FC07B00747A7A /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 683932292A2A7B140062C2F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -320,6 +408,7 @@
 			files = (
 				68665AE22A2E877100A71563 /* Debugging.mp4 in Resources */,
 				683932362A2A7B150062C2F8 /* LaunchScreen.storyboard in Resources */,
+				685036502A2FA6BB00747A7A /* SearchTableViewCell.xib in Resources */,
 				683932692A2A94EA0062C2F8 /* VideosTableViewCell.xib in Resources */,
 				683932332A2A7B150062C2F8 /* Assets.xcassets in Resources */,
 				6839326D2A2A95180062C2F8 /* VideosCollectionViewCell.xib in Resources */,
@@ -350,15 +439,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				685036592A2FB38700747A7A /* SearchModel.swift in Sources */,
+				685036522A2FAFE800747A7A /* SearchViewModel.swift in Sources */,
 				683932602A2A8DD70062C2F8 /* SearchViewController.swift in Sources */,
+				6850365F2A2FC10F00747A7A /* UIImageView+TvOSUIImageView.swift in Sources */,
+				685036562A2FB05700747A7A /* ApiService.swift in Sources */,
+				685036622A2FC91F00747A7A /* Utils.swift in Sources */,
 				683932682A2A94EA0062C2F8 /* VideosTableViewCell.swift in Sources */,
 				6839326C2A2A95180062C2F8 /* VideosCollectionViewCell.swift in Sources */,
 				6839322C2A2A7B140062C2F8 /* AppDelegate.swift in Sources */,
+				685036652A2FCA7B00747A7A /* URLManager.swift in Sources */,
 				683932642A2A8DEC0062C2F8 /* DetailViewController.swift in Sources */,
 				683932622A2A8DE10062C2F8 /* ProfileViewController.swift in Sources */,
 				6839325E2A2A8DC00062C2F8 /* HomeViewController.swift in Sources */,
 				683932702A2A953A0062C2F8 /* ClassifiedCollectionViewCell.swift in Sources */,
 				683932742A2A95460062C2F8 /* ToolsCollectionViewCell.swift in Sources */,
+				6850364F2A2FA6BB00747A7A /* SearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,6 +784,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6850365A2A2FC07B00747A7A /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6850365B2A2FC07B00747A7A /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6850365A2A2FC07B00747A7A /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 683932202A2A7B140062C2F8 /* Project object */;
 }

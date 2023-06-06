@@ -20,8 +20,8 @@ class VideosTableViewCell: UITableViewCell {
     var type: CellType = .latestVideos
     weak var delegate: VideosCollectionViewCellDelegate?
     
-    var latestVideos = ["debugging", "lazyView", "appleSignIn", "inheritance", "copyOnWrite", "methodDispatch"]
     var carouselVideos = ["tvOS_development", "iCode_Banner_Small"]
+    var latestVideos = ["debugging", "lazyView", "appleSignIn", "inheritance", "copyOnWrite", "methodDispatch"]
     var classifiedVideos = ["Interviews", "Swift UI", "Core Concepts", "DSA"]
     var toolsVideos = ["simsim", "instruments", "pusher"]
     
@@ -104,7 +104,7 @@ extension VideosTableViewCell: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch type{
         case .carousel:
-            return CGSize(width: collectionView.frame.size.width - 180, height: collectionView.frame.size.height)
+            return CGSize(width: collectionView.frame.size.width - 280, height: collectionView.frame.size.height)
         case .latestVideos, .tools:
             return CGSize(width: (16/9) * collectionView.frame.size.height, height: collectionView.frame.size.height)
         case .classified:

@@ -49,6 +49,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
             case .carousel:
                 cell.titleLabel.isHidden = true
                 cell.videosCollectionViewHeightConstraint.constant = 540
+                cell.delegate = self
             case .latestVideos:
                 cell.titleLabel.text = "Latest by iCode"
                 cell.videosCollectionViewHeightConstraint.constant = 360
