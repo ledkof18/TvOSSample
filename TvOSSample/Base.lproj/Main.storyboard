@@ -51,7 +51,85 @@
                     <view key="view" contentMode="scaleToFill" id="4M2-X4-IhJ">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lowpoly-grey-gradient-vector" translatesAutoresizingMaskIntoConstraints="NO" id="z9R-CV-DxZ">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMo-wA-tQw">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8yr-Zu-kKK">
+                                    <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iCode_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ChG-mH-lTi">
+                                            <rect key="frame" x="810" y="120" width="300" height="300"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="300" id="8Rt-Pp-NyN"/>
+                                                <constraint firstAttribute="height" constant="300" id="UHq-qF-Ogx"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login to your account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUe-bP-6Kz">
+                                            <rect key="frame" x="779.5" y="476" width="361" height="46"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ua5-5t-0Z8">
+                                            <rect key="frame" x="750" y="600" width="420" height="88"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="88" id="6nB-kl-J7x"/>
+                                                <constraint firstAttribute="width" constant="420" id="X4A-Uq-mft"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sdl-Om-yx9">
+                                            <rect key="frame" x="750" y="732" width="420" height="88"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="88" id="8PR-HH-NaA"/>
+                                                <constraint firstAttribute="width" constant="420" id="sAN-Fh-iOU"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfX-dU-5ez">
+                                            <rect key="frame" x="750" y="876" width="420" height="86"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="420" id="ULg-6U-lDr"/>
+                                            </constraints>
+                                            <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Login"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Sdl-Om-yx9" firstAttribute="top" secondItem="Ua5-5t-0Z8" secondAttribute="bottom" constant="44" id="2wa-4j-qKI"/>
+                                        <constraint firstItem="Sdl-Om-yx9" firstAttribute="centerX" secondItem="8yr-Zu-kKK" secondAttribute="centerX" id="A4j-MJ-GbQ"/>
+                                        <constraint firstItem="TfX-dU-5ez" firstAttribute="top" secondItem="Sdl-Om-yx9" secondAttribute="bottom" constant="56" id="AhP-yx-cFL"/>
+                                        <constraint firstItem="Sdl-Om-yx9" firstAttribute="leading" secondItem="Ua5-5t-0Z8" secondAttribute="leading" id="C2Q-vE-UOP"/>
+                                        <constraint firstItem="IUe-bP-6Kz" firstAttribute="centerX" secondItem="8yr-Zu-kKK" secondAttribute="centerX" id="Day-Mp-JdR"/>
+                                        <constraint firstItem="IUe-bP-6Kz" firstAttribute="top" secondItem="ChG-mH-lTi" secondAttribute="bottom" constant="56" id="Mm6-uG-wyk"/>
+                                        <constraint firstItem="TfX-dU-5ez" firstAttribute="centerX" secondItem="8yr-Zu-kKK" secondAttribute="centerX" id="UAc-9M-0Y6"/>
+                                        <constraint firstItem="Ua5-5t-0Z8" firstAttribute="top" secondItem="IUe-bP-6Kz" secondAttribute="bottom" constant="78" id="XrJ-CK-M07"/>
+                                        <constraint firstItem="ChG-mH-lTi" firstAttribute="centerX" secondItem="8yr-Zu-kKK" secondAttribute="centerX" id="bXE-DF-i9v"/>
+                                        <constraint firstItem="ChG-mH-lTi" firstAttribute="top" secondItem="8yr-Zu-kKK" secondAttribute="top" constant="120" id="vLK-60-awD"/>
+                                        <constraint firstItem="Ua5-5t-0Z8" firstAttribute="centerX" secondItem="8yr-Zu-kKK" secondAttribute="centerX" id="w21-lY-2wy"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qBL-aZ-BOd"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="wMo-wA-tQw" secondAttribute="bottom" id="Kgi-1X-Yrt"/>
+                            <constraint firstItem="wMo-wA-tQw" firstAttribute="leading" secondItem="4M2-X4-IhJ" secondAttribute="leading" id="QHv-fD-8jG"/>
+                            <constraint firstAttribute="bottom" secondItem="z9R-CV-DxZ" secondAttribute="bottom" id="aUi-ZE-x5G"/>
+                            <constraint firstAttribute="trailing" secondItem="z9R-CV-DxZ" secondAttribute="trailing" id="anW-xP-O1L"/>
+                            <constraint firstAttribute="trailing" secondItem="wMo-wA-tQw" secondAttribute="trailing" id="kXj-b6-huQ"/>
+                            <constraint firstItem="z9R-CV-DxZ" firstAttribute="leading" secondItem="4M2-X4-IhJ" secondAttribute="leading" id="oOV-8n-2FY"/>
+                            <constraint firstItem="z9R-CV-DxZ" firstAttribute="top" secondItem="4M2-X4-IhJ" secondAttribute="top" id="w2h-w5-Vf6"/>
+                            <constraint firstItem="wMo-wA-tQw" firstAttribute="top" secondItem="4M2-X4-IhJ" secondAttribute="top" id="zMA-9H-Cv1"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qL-a4-msT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -69,7 +147,65 @@
                     <view key="view" contentMode="scaleToFill" id="Kh1-ie-PAJ">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jtK-qk-jXz">
+                                <rect key="frame" x="760" y="100" width="400" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="a41-Z5-IO6"/>
+                                    <constraint firstAttribute="height" constant="90" id="bvu-ge-Soq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="5fN-na-Hho">
+                                <rect key="frame" x="546.5" y="280" width="827" height="86"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kY5-Jd-emT">
+                                        <rect key="frame" x="0.0" y="0.0" width="106" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="A"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyE-MO-GaR">
+                                        <rect key="frame" x="146" y="0.0" width="104" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="B"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Rs-fd-8JL">
+                                        <rect key="frame" x="290" y="0.0" width="107" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="C"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfV-mT-CAI">
+                                        <rect key="frame" x="437" y="0.0" width="107" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="D"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMg-mr-ljt">
+                                        <rect key="frame" x="584" y="0.0" width="102" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="E"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jJ-KC-ZcV">
+                                        <rect key="frame" x="726" y="0.0" width="101" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="F"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4bE-xL-YSw"/>
+                        <constraints>
+                            <constraint firstItem="jtK-qk-jXz" firstAttribute="top" secondItem="4bE-xL-YSw" secondAttribute="top" constant="40" id="Si7-OI-yzO"/>
+                            <constraint firstItem="5fN-na-Hho" firstAttribute="top" secondItem="jtK-qk-jXz" secondAttribute="bottom" constant="90" id="c7T-ja-f4N"/>
+                            <constraint firstItem="5fN-na-Hho" firstAttribute="centerX" secondItem="Kh1-ie-PAJ" secondAttribute="centerX" id="u6A-Hf-Rsu"/>
+                            <constraint firstItem="jtK-qk-jXz" firstAttribute="centerX" secondItem="Kh1-ie-PAJ" secondAttribute="centerX" id="wGh-TV-UK6"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gx3-zh-eoE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -209,5 +345,7 @@
     </scenes>
     <resources>
         <image name="debugging" width="1280" height="720"/>
+        <image name="iCode_Logo" width="1024" height="1024"/>
+        <image name="lowpoly-grey-gradient-vector" width="1400" height="980"/>
     </resources>
 </document>
